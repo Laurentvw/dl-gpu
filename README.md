@@ -11,5 +11,5 @@ Or check: https://medium.com/google-cloud/jupyter-tensorflow-nvidia-gpu-docker-g
 
 To use this Dockerfile without having to install docker-compose on the server:
 - sudo docker pull laurentvw/dl-gpu
-- sudo nvidia-docker run -it -p 8888:8888 -v /notebook:/notebook laurentvw/dl-gpu jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/notebook'
-
+- sudo nvidia-docker run -it -p 8888:8888 -v /notebook:/notebook laurentvw/dl-gpu bash
+- jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/notebook'
